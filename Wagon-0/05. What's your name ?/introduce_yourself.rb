@@ -12,6 +12,6 @@ puts "Hello #{first_name} #{middle_name} #{last_name}".length
 puts "Hello"+" "+first_name+" "+middle_name+" "+last_name
 
 
-unless last_name.empty?s
+unless last_name.empty?
 	puts "You are a good person"
 end
