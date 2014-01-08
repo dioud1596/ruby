@@ -8,11 +8,14 @@ def wagon_sort
   	student = gets.chomp
   	array << student
   end
-  	
+  array.reject! { |c| c.empty? }
   puts "Congratulations ! Your Wagon has #{array.length} students"
-  array.sort.each do |mack|
-  	puts mack
+  array.sort_by {|word| word.downcase}.each do |word|
+    puts word
   end
+
+    
+    
 
 end
 
