@@ -1,8 +1,17 @@
 def bugged_concatenate(array)
-  # 2. fix the code: TypeError
-  puts array.inject("") { |output, element| output + element }.upcase
+  puts array.inject("") { |output, element| output + element.to_s }.upcase
 end
 
+def canard(array)
+	puts array.map {|x, y| x * 2}
+end
 
-# 1. fix the method call: ArgumentError
-bugged_concatenate( 1, "9", 84, " ", "George Orwell" )
+# Fix the method
+bugged_concatenate(["1", "9", "84", " ", "George Orwell"])
+
+# Duck Typing
+canard(["1", "9", "84"])
+canard([1, 9, 84])
+
+
+
