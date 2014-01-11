@@ -1,24 +1,26 @@
-def wagon_sort
-  array = []
-  puts "Type a student:"
-  student = gets.chomp
-  array << student
-  until student.empty?
-  	puts "Type another student:"
-  	student = gets.chomp
-  	array << student
-  end
-  array.reject! { |c| c.empty? }
-  puts "Congratulations ! Your Wagon has #{array.length} students"
-  array.sort_by {|word| word.downcase}.each do |word|
-    puts word
-  end
+def get_students()
+  students = []
+  puts "Type a student"
+  input = gets.chomp
+  students << input
 
-    
-    
+  while true
+    puts "Type a student"
+    input = gets.chomp
+    students << input
+   break if input.empty?  
+  end
+  students.reject! {|a| a.empty? }
 
+  puts "congratulations you are #{students.length} in the wagon:"
+  puts students.sort_by {|word| word.downcase}
 end
+get_students
 
-wagon_sort
 
-# your code to interact with the user..
+
+
+
+
+
+
