@@ -4,7 +4,6 @@ def beersong(nb_at_start)
     puts "Take one down, pass it around,#{nb_at_start - 1} bottles of beer on the wall!"
     nb_at_start -= 1
   end
- nb_at_start
 puts "2 bottles of beer on the wall, 2 bottles of beer!
 Take one down, pass it around, 1 bottle of beer on the wall!"
 puts "1 bottle of beer on the wall, 1 bottle of beer!
