@@ -47,7 +47,7 @@ def get_students()
   while true
     puts "Type a student"
     input = gets.chomp
-    break if input.empty?
+    break if input.empty? #on break avant de remplir l'array si le get est vide
     students << input
   end
   
